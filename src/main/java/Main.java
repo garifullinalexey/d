@@ -8,7 +8,7 @@ public class Main {
     public static void main(String args[]) {
         String value = null;
         String nominal = null;
-        Document doc;
+        Document doc = null;
         try {
             doc = Jsoup.connect("http://www.cbr.ru/scripts/XML_daily.asp").get();
             value = doc.getElementById("R01200").getElementsByTag("value").text();
